@@ -1,0 +1,4 @@
+dinov2_vits14_forward_features_with_transformed.ort
+dinov2_vits14_forward_features.ort
+dinov2.pt
+dinov2.ort
