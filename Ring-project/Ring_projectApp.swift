@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 @main
 struct Ring_projectApp: App {
     var body: some Scene {
