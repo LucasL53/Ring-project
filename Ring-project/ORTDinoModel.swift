@@ -22,7 +22,7 @@ class ORTDinoModel {
     
     init() throws {
         // Loading the model
-        let name = "dinov2_vits14_forward_features_with_transformed"
+        let name = "ring_dinov2_nearestinterp_nocrop"
         ortEnv = try ORTEnv(loggingLevel: ORTLoggingLevel.warning)
         guard let modelPath = Bundle.main.path(forResource: name, ofType: "ort") else {
             throw ModelError.Error("Failed to find model file:\(name).ort")
@@ -39,8 +39,11 @@ class ORTDinoModel {
         
         let width = cgImage.width
         let height = cgImage.height
-        let colorSpace = CGColorSpaceCreateDeviceRGB()
-        let bytesPerPixel = 4
+        guard let colorSpace = cgImage.colorSpace else {
+            print("could not assign color space")
+            return [[[Float(0)]]]
+        }
+        let bytesPerPixel = 4 // TODO: Might need to change this to 1 byte.
         let bytesPerRow = bytesPerPixel * width
         let bitsPerComponent = 8
         var pixelData = [UInt8](repeating: 0, count: width * height * bytesPerPixel)
@@ -58,9 +61,9 @@ class ORTDinoModel {
             for x in 0..<width {
                 let index = y * width + x
                 let pixelIndex = index * bytesPerPixel
-                rgbData[0][y][x] = Float(pixelData[pixelIndex])
-                rgbData[1][y][x] = Float(pixelData[pixelIndex + 1])
-                rgbData[2][y][x] = Float(pixelData[pixelIndex + 2])
+                rgbData[0][y][x] = Float(pixelData[pixelIndex]) / 255
+                rgbData[1][y][x] = Float(pixelData[pixelIndex + 1]) / 255
+                rgbData[2][y][x] = Float(pixelData[pixelIndex + 2]) / 255
             }
         }
         
@@ -119,14 +122,14 @@ class ORTDinoModel {
                         shape: shape)
 
             let output = try ortSession.run(withInputs: ["input_img": ortInput],
-                                                     outputNames: ["embeddings"],
+                                                     outputNames: ["x_norm_patchtokens"],
                                                      runOptions: nil)
             
-            guard let ORTout = output["embeddings"] else {
+            guard let ORTout = output["x_norm_patchtokens"] else {
                 print("output was null in Dino run")
                 return nil
             }
-            
+
             return ORTToTensor(ortValue: ORTout)
         } catch {
             print("error computing Dino feats: \(error)")
@@ -234,7 +237,7 @@ class ORTDinoModel {
     }
     
     // Loads the dataset and checks accuracy of the Dino model
-    func eval(filepath: String) -> Void {
+    func eval() -> Void {
         // Get the query and ref image file paths
         let queryDirectory = bundleURL.appendingPathComponent("Data/test_set/queries")
         var queryFiles: [String] = []
