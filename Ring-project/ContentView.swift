@@ -39,7 +39,7 @@ struct ContentView: View {
     }
 
     private func runDino() async -> Void {
-        model.eval()
+        model.accuracy_and_latency_test()
     }
 
     var body: some View {

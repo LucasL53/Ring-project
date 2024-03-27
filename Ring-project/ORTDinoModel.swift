@@ -236,8 +236,7 @@ class ORTDinoModel {
         return scores
     }
     
-    // Loads the dataset and checks accuracy of the Dino model
-    func eval() -> Void {
+    func accuracy_and_latency_test() -> Void {
         // Get the query and ref image file paths
         let queryDirectory = bundleURL.appendingPathComponent("Data/test_set/queries")
         var queryFiles: [String] = []
@@ -271,36 +270,62 @@ class ORTDinoModel {
         
         // Create a reference dictionary - Map from label to list of files
         var references: [String: [String]] = [:]
+        var labels: [String] = []
         for file in refFiles {
             let label = getLabel(file)
             if references[label] == nil {
                 references[label] = []
+                labels.append(label)
             }
             references[label]?.append(file)
         }
         
-        // Create a query table
+        // Cumulative emb map
+        var refEmb: [String: [String: [[[Float]]]]] = [:]
+        var emb_time_arr: [Double] = []
+        
+        // Query table
         var queries: [(label: String, pred: String, score: Float)] = []
         
-        // Ref embeddings - compute embedding for each image
-        var refEmb: [String: [String: [[[Float]]]]] = [:]
-        for (label, files) in references {
+        // Main loop starting with i = 1 object in database, compute predictions for each query, increment i.
+        for i in 0..<25 {
+            // Ref embeddings - compute embedding for each image for the i'th object and add it to the cum map.
+            var label = labels[i]
+            guard var files = references[label] else {
+                print("ref array err")
+                return
+            }
+            print("added label: \(label)")
             refEmb[label] = [:]
             for file in files {
                 if let image = UIImage(contentsOfFile: file) {
+                    var start = Date()
                     refEmb[label]![file] = computeDinoFeat(from_img: image)
+                    var end = Date()
+                    emb_time_arr.append(end.timeIntervalSince(start))
                 }
             }
+
+            // Predictions
+            var query_time_arr: [Double] = []
+            queries.removeAll()
+            for queryFile in queryFiles {
+                var start = Date()
+                let prediction = get_prediction(query_file: queryFile, database: refEmb)
+                var end = Date()
+                query_time_arr.append(end.timeIntervalSince(start))
+                if let (score, pred, _) = prediction.first {
+                    let label = getLabel(queryFile)
+                    queries.append((label: label, pred: pred, score: score))
+                }
+            }
+            
+            print("Average of \(Double(query_time_arr.count)) queries with database of \(refEmb.count) speed: \(query_time_arr.reduce(0, +) / Double(query_time_arr.count))")
+            print("All times: \(query_time_arr)")
         }
         
-        // Predictions
-        for queryFile in queryFiles {
-            let prediction = get_prediction(query_file: queryFile, database: refEmb)
-            if let (score, pred, _) = prediction.first {
-                let label = getLabel(queryFile)
-                queries.append((label: label, pred: pred, score: score))
-            }
-        }
+        print("Average of \(Double(emb_time_arr.count)) embedding generation speed: \(emb_time_arr.reduce(0, +) / Double(emb_time_arr.count))")
+        print("All times: \(emb_time_arr)")
         
         for q in queries {
             print("\(q)")
