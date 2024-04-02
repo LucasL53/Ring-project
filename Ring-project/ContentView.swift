@@ -1,65 +1,49 @@
 //
 //  ContentView.swift
-//  Ring-project
+//  Ring-Camera-Control
 //
-//  Created by Eyoel Gebre on 2/15/24.
+//  Created by Yunseo Lee on 8/12/23.
 //
 
 import SwiftUI
+import MusicKit
+import SwiftData
 
 struct ContentView: View {
-    private let model = try! ORTDinoModel()
     
-    private func printTensorAndEmbedding() async -> Void {
-        if let imagePath = Bundle.main.path(forResource: "IMG_3264", ofType: "JPG", inDirectory: "Data/test_set/queries/blinds_2") {
-            guard let img = UIImage(named: imagePath) else {
-                print("UIImage() failed")
-                return
-            }
-            let img_ten = model.imageToTensor(img: img)
-            print(img_ten)
-            print("--------------------------------------------------------------------------------------------")
-            guard let tensor = model.computeDinoFeat(from_img: img) else {
-                print("couldn't get embs")
-                return
-            }
-            print("tensor dims: \(tensor.count) x \(tensor[0].count) x \(tensor[0][0].count)")
-            
-            print("[", terminator: "")
-            for i in 0..<tensor.count {
-                print("[", terminator: "")
-                for j in 0..<tensor[i].count {
-                    let row = tensor[i][j].map { String($0) }.joined(separator: ", ")
-                    print("[\(row)],")
-                }
-                print("],", terminator: "")
-            }
-            print("]", terminator: "")
-        }
-    }
-
-    private func runDino() async -> Void {
-        model.accuracy_and_latency_test()
-    }
-
+    @Environment(\.modelContext) var modelContext
+    
+    @ObservedObject var homeModel = HomeStore()
+    
+    @Query var embeddings: [HomeEmbeddings]
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-            Button(action: {
-                Task {
-                    await runDino()
-                }
-            }) {
-                Text("runDino")
+        ZStack {
+            HomeView(model: homeModel)
+        }.onChange(of: homeModel.areHomesLoaded){
+            if homeModel.areHomesLoaded {
+                initializeNewHomes()
             }
         }
-        .padding()
+
     }
+    
+    // Checks if every new "home" added to HomeKit has persistent data initialized
+    func initializeNewHomes() {
+        for home in homeModel.homes {
+            if !embeddings.contains(where: {$0.home == home.name}) {
+                let accessoryEmbeddings: [AccessoryEmbedding] = []
+                // If homeModel.accessories populate only the accesorries of home
+//                for accessory in homeModel.accessories {
+//                    let newAccessory = AccessoryEmbedding(accessoryUUID: accessory.uniqueIdentifier, accessoryName: accessory.name)
+//                    accessoryEmbeddings.append(newAccessory)
+//                }
+                let newEmbedding = HomeEmbeddings(home: home.name, accessoryembeddings: accessoryEmbeddings)
+                modelContext.insert(newEmbedding)
+            }
+        }
+    }
+    
 }
 
-#Preview {
-    ContentView()
-}

@@ -27,6 +27,7 @@ class ORTDinoModel {
         guard let modelPath = Bundle.main.path(forResource: name, ofType: "ort") else {
             throw ModelError.Error("Failed to find model file:\(name).ort")
         }
+        print(modelPath)
         ortSession = try ORTSession(env: ortEnv, modelPath: modelPath, sessionOptions: nil)
     }
     
@@ -61,12 +62,11 @@ class ORTDinoModel {
             for x in 0..<width {
                 let index = y * width + x
                 let pixelIndex = index * bytesPerPixel
-                rgbData[0][y][x] = Float(pixelData[pixelIndex]) / 255
-                rgbData[1][y][x] = Float(pixelData[pixelIndex + 1]) / 255
-                rgbData[2][y][x] = Float(pixelData[pixelIndex + 2]) / 255
+                rgbData[0][y][x] = Float(pixelData[pixelIndex]) / 1
+                rgbData[1][y][x] = Float(pixelData[pixelIndex + 1]) / 1
+                rgbData[2][y][x] = Float(pixelData[pixelIndex + 2]) / 1
             }
         }
-        
         return rgbData
     }
     
@@ -112,6 +112,8 @@ class ORTDinoModel {
     func computeDinoFeat(from_img: UIImage) -> [[[Float]]]? {
         let tensor: [[[Float]]] = imageToTensor(img: from_img)
         let flatTensor = tensor.flatMap { $0.flatMap { $0 } }
+        print(flatTensor.count)
+        print(flatTensor)
         let shape: [NSNumber] = [NSNumber(value: tensor.count), NSNumber(value: tensor[0].count), NSNumber(value: tensor[0][0].count)]
         let data_obj = flatTensor.withUnsafeBufferPointer { Data(buffer: $0) }
         
