@@ -704,7 +704,7 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
             ]
             
             if let labelText = detection.label {
-                let text = "\(labelText) : \(round(detection.confidence*100))"
+                let text = "\(labelText)"
                 let textSize = (text as NSString).size(withAttributes: attributes)
                 let textRect = CGRect(
                     x: boundingBoxRect.origin.x,
@@ -837,7 +837,7 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
                                         }
                                         else {
                                             //classifiedDevice = prevClassifiedDevice
-                                            print("Device not in dictionary", classifiedDevice)
+//                                            print("Device not in dictionary", classifiedDevice)
 //                                            print("Detected device not in homeDictionary:", homeModel.homeDictionary)
                                         }
                                     }
