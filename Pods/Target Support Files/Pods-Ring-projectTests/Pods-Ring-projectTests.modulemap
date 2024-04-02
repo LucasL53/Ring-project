@@ -1,6 +1,0 @@
-framework module Pods_Ring_projectTests {
-  umbrella header "Pods-Ring-projectTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
