@@ -158,6 +158,9 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
     private var rotationInitialized     : Bool         = false
     private var rotationCounter         : Int          = 0
 //    private var muted                   : Bool         = false
+    private var scanDinoFlag            : Bool         = false
+    private var scanDinoAccessory       : AccessoryEmbedding?
+    private var homeEmbedding           : HomeEmbeddings?
     private let rotationThreshold       : Int          = 20
     private let date = Date()
     
@@ -808,6 +811,16 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
                         
                         if let uiImage = self.createImageFromUInt8Buffer(buffer: cameraBuffer, width: imgWidth, height: imgHeight) {
                             if let centeredImage = centerImageOnBlackSquare(image: uiImage, squareSize: CGSize(width: 160, height: 160)) {
+                                
+                                if scanDinoFlag {
+                                    if let pngData = uiImage.pngData(), let currAccessory = scanDinoAccessory {
+                                        let dinoEmbedding = [0.0] // TODO: Eyoel Dino Code here
+                                        let photoAndEmbedding = PhotoAndEmbedding(photo: pngData, embedding: dinoEmbedding)
+                                        currAccessory.photoAndEmbeddings.append(photoAndEmbedding)
+                                    }
+                                    scanDinoFlag = false
+                                }
+                                
                                 imageToSave = uiImage
                                 if let cgimage = centeredImage.cgImage {
                                     let startTime = CFAbsoluteTimeGetCurrent() // Capture start time
@@ -852,6 +865,14 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
                                 if (buttonPressedFlag) {
                                     print("Arming controlDeviceFlag rotationCounter:", rotationCounter)
                                     controlDeviceFlag = true
+                                    
+                                    if let homeStorage = homeEmbedding {
+                                        // TODO: Eyoel Query Code here
+                                        // class from YOLO is called classifiedDevice (type String)
+                                        // classifiedDevice {'blinds', 'door', 'door handle', 'laptop', 'lights', 'smart lock', 'speaker', 'tv', 'window'}
+                                        // eyoelFunc(classifiedDevice: String = classifiedDevice,
+                                        //           buffer: [Double] = cameraBuffer, reference: HomeEmbeddings = homeStorage)
+                                    }
                                     
                                     guard let emb = mlModel.DinoEmbedding(img_buf: cameraBuffer) else {
                                         print("Error: Could not get an embedding for image")
@@ -999,6 +1020,19 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
             print("banji is streaming")
         }
     }
+    // MARK: - DINOv2 scan and query
+    public func scanFrame(accessory: AccessoryEmbedding) {
+        scanDinoAccessory = accessory
+        scanDinoFlag = true
+        print("\(scanDinoAccessory!.accessoryName) scanning...")
+    }
+    
+    public func updateHome(home: HomeEmbeddings) {
+        homeEmbedding = home
+        print("\(home.home) loaded...")
+    }
+    
+    // MARK: - Rotation Calc
     
     // Apply the rotation using the rotation matrix
     public func applyRotationMatrix(matrix: [[Double]], toVector vector: [Double]) -> [Double] {

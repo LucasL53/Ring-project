@@ -13,7 +13,7 @@ struct OutlinedButtonStyle: ButtonStyle {
             .foregroundColor(.blue)
             .padding()
             .background(
-                RoundedRectangle(cornerRadius: 30)
+                RoundedRectangle(cornerRadius: 10)
                     .stroke(Color.blue, lineWidth: 2)
             )
             .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
