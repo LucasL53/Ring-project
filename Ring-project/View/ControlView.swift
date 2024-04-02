@@ -129,22 +129,22 @@ struct ControlView: View {
                                     }
                                 }
                             Spacer(minLength: 10)
-//                            NavigationView {
-//                                if let embedding = homeEmbedding {
-//                                    NavigationLink(destination: SetUpView(home: embedding)) {
-//                                        Text("Add New IRIS Device Reference")
-//                                            .frame(maxWidth: .infinity, alignment: .center)
-//                                    }.buttonStyle(OutlinedButtonStyle())
-//                                }
-//                            }
-                            if let embedding = homeEmbedding {
-                                Button(action: {
-                                    print("scan mode")
-                                }){
-                                    Text("Add New Device Reference")
-                                    .frame(maxWidth: .infinity, alignment: .center)
-                                }.buttonStyle(OutlinedButtonStyle())
+                            NavigationView {
+                                if let embedding = homeEmbedding {
+                                    NavigationLink(destination: SetUpView(home: embedding)) {
+                                        Text("Add New IRIS Device Reference")
+                                            .frame(maxWidth: .infinity, alignment: .center)
+                                    }.buttonStyle(OutlinedButtonStyle())
+                                }
                             }
+//                            if let embedding = homeEmbedding {
+//                                Button(action: {
+//                                    print("scan mode")
+//                                }){
+//                                    Text("Add New Device Reference")
+//                                    .frame(maxWidth: .infinity, alignment: .center)
+//                                }.buttonStyle(OutlinedButtonStyle())
+//                            }
                             
                         }
                         
