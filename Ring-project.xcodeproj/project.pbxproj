@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27ACCB638958F5DF027F3B69 /* Pods_Ring_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F73CF066AE6B638E3007065 /* Pods_Ring_project.framework */; };
+		8D946F7D2BBC566000EFF8DE /* SetUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D946F7C2BBC566000EFF8DE /* SetUpView.swift */; };
+		8D946F7F2BBC567B00EFF8DE /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D946F7E2BBC567A00EFF8DE /* ScanView.swift */; };
+		8D946F812BBC56A000EFF8DE /* SelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D946F802BBC56A000EFF8DE /* SelectButton.swift */; };
+		8D946F832BBC56B600EFF8DE /* RoutePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D946F822BBC56B600EFF8DE /* RoutePickerView.swift */; };
+		8D946F852BBC56CA00EFF8DE /* OutlinedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D946F842BBC56CA00EFF8DE /* OutlinedButtonStyle.swift */; };
+		8D946F872BBC56EC00EFF8DE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D946F862BBC56EC00EFF8DE /* HomeView.swift */; };
+		8D946F892BBC572700EFF8DE /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D946F882BBC572700EFF8DE /* ControlView.swift */; };
+		8D946F8D2BBC574F00EFF8DE /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D946F8C2BBC574F00EFF8DE /* MusicPlayer.swift */; };
+		8D946F8F2BBC576000EFF8DE /* ServicesNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D946F8E2BBC576000EFF8DE /* ServicesNow.swift */; };
+		8D946F912BBC576F00EFF8DE /* CharacteristicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D946F902BBC576F00EFF8DE /* CharacteristicsView.swift */; };
+		8D946F942BBC57C200EFF8DE /* HomeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D946F932BBC57C200EFF8DE /* HomeStore.swift */; };
+		8D946F962BBC57D000EFF8DE /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D946F952BBC57D000EFF8DE /* BluetoothManager.swift */; };
+		8D946F982BBC57DA00EFF8DE /* MLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D946F972BBC57DA00EFF8DE /* MLHandler.swift */; };
+		8D946F9A2BBC57EB00EFF8DE /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D946F992BBC57EB00EFF8DE /* MusicModel.swift */; };
+		8D946F9C2BBC57F500EFF8DE /* RouterPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D946F9B2BBC57F500EFF8DE /* RouterPicker.swift */; };
+		8D946FA02BBC581B00EFF8DE /* EmbeddingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D946F9F2BBC581B00EFF8DE /* EmbeddingModel.swift */; };
+		8D946FA32BBC5A6800EFF8DE /* best_75.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 8D946FA22BBC5A6800EFF8DE /* best_75.mlpackage */; };
+		8D9A556F2B95730100F4E85F /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8D9A556E2B95730100F4E85F /* PythonKit */; };
+		8DBFB75C2BB095EA0024645F /* ring_dinov2_nearestinterp_nocrop.ort in Resources */ = {isa = PBXBuildFile; fileRef = 8DBFB75B2BB095EA0024645F /* ring_dinov2_nearestinterp_nocrop.ort */; };
+		8DBFB75D2BB3CCBD0024645F /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 8DBFB7572BABBADC0024645F /* Data */; };
 		8DD2A6192B7E04AE008772F4 /* Ring_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2A6182B7E04AE008772F4 /* Ring_projectApp.swift */; };
 		8DD2A61B2B7E04AE008772F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2A61A2B7E04AE008772F4 /* ContentView.swift */; };
 		8DD2A61D2B7E04B0008772F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DD2A61C2B7E04B0008772F4 /* Assets.xcassets */; };
@@ -14,7 +35,24 @@
 		8DD2A62B2B7E04B1008772F4 /* Ring_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2A62A2B7E04B1008772F4 /* Ring_projectTests.swift */; };
 		8DD2A6352B7E04B1008772F4 /* Ring_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2A6342B7E04B1008772F4 /* Ring_projectUITests.swift */; };
 		8DD2A6372B7E04B1008772F4 /* Ring_projectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2A6362B7E04B1008772F4 /* Ring_projectUITestsLaunchTests.swift */; };
+		8DD2A6462B7E8892008772F4 /* ORTDinoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2A6452B7E8892008772F4 /* ORTDinoModel.swift */; };
+		B562487800E3FBFB233AD158 /* Pods_Ring_projectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA684238F668122DE2F7CFF /* Pods_Ring_projectTests.framework */; };
+		CE96A8C99720EF32A990D1C9 /* Pods_Ring_project_Ring_projectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F339117C6773F36CED2ABF0 /* Pods_Ring_project_Ring_projectUITests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		8D1B61BE2B86994D00CE7737 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		8DD2A6272B7E04B1008772F4 /* PBXContainerItemProxy */ = {
@@ -34,6 +72,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F73CF066AE6B638E3007065 /* Pods_Ring_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ring_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F339117C6773F36CED2ABF0 /* Pods_Ring_project_Ring_projectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ring_project_Ring_projectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EECEEB502FB67126882493A /* Pods-Ring-projectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ring-projectTests.debug.xcconfig"; path = "Target Support Files/Pods-Ring-projectTests/Pods-Ring-projectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		741D73CC52AF54A76231EE55 /* Pods-Ring-project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ring-project.debug.xcconfig"; path = "Target Support Files/Pods-Ring-project/Pods-Ring-project.debug.xcconfig"; sourceTree = "<group>"; };
+		889BDD95DBDCE165630DC333 /* Pods-Ring-project-Ring-projectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ring-project-Ring-projectUITests.release.xcconfig"; path = "Target Support Files/Pods-Ring-project-Ring-projectUITests/Pods-Ring-project-Ring-projectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8D946F7C2BBC566000EFF8DE /* SetUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SetUpView.swift; path = "Ring-project/View/SetUpUI/SetUpView.swift"; sourceTree = SOURCE_ROOT; };
+		8D946F7E2BBC567A00EFF8DE /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		8D946F802BBC56A000EFF8DE /* SelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectButton.swift; sourceTree = "<group>"; };
+		8D946F822BBC56B600EFF8DE /* RoutePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePickerView.swift; sourceTree = "<group>"; };
+		8D946F842BBC56CA00EFF8DE /* OutlinedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinedButtonStyle.swift; sourceTree = "<group>"; };
+		8D946F862BBC56EC00EFF8DE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8D946F882BBC572700EFF8DE /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		8D946F8C2BBC574F00EFF8DE /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		8D946F8E2BBC576000EFF8DE /* ServicesNow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesNow.swift; sourceTree = "<group>"; };
+		8D946F902BBC576F00EFF8DE /* CharacteristicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicsView.swift; sourceTree = "<group>"; };
+		8D946F932BBC57C200EFF8DE /* HomeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStore.swift; sourceTree = "<group>"; };
+		8D946F952BBC57D000EFF8DE /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		8D946F972BBC57DA00EFF8DE /* MLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLHandler.swift; sourceTree = "<group>"; };
+		8D946F992BBC57EB00EFF8DE /* MusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
+		8D946F9B2BBC57F500EFF8DE /* RouterPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterPicker.swift; sourceTree = "<group>"; };
+		8D946F9F2BBC581B00EFF8DE /* EmbeddingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddingModel.swift; sourceTree = "<group>"; };
+		8D946FA22BBC5A6800EFF8DE /* best_75.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = best_75.mlpackage; sourceTree = "<group>"; };
+		8D946FB02BBC609500EFF8DE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DBFB7572BABBADC0024645F /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
+		8DBFB75B2BB095EA0024645F /* ring_dinov2_nearestinterp_nocrop.ort */ = {isa = PBXFileReference; lastKnownFileType = file; path = ring_dinov2_nearestinterp_nocrop.ort; sourceTree = "<group>"; };
 		8DD2A6152B7E04AE008772F4 /* Ring-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ring-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD2A6182B7E04AE008772F4 /* Ring_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ring_projectApp.swift; sourceTree = "<group>"; };
 		8DD2A61A2B7E04AE008772F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +108,11 @@
 		8DD2A6302B7E04B1008772F4 /* Ring-projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ring-projectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD2A6342B7E04B1008772F4 /* Ring_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ring_projectUITests.swift; sourceTree = "<group>"; };
 		8DD2A6362B7E04B1008772F4 /* Ring_projectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ring_projectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8DD2A6452B7E8892008772F4 /* ORTDinoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ORTDinoModel.swift; sourceTree = "<group>"; };
+		8FA684238F668122DE2F7CFF /* Pods_Ring_projectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ring_projectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B849E7AAF5B3CBAC6C030D57 /* Pods-Ring-project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ring-project.release.xcconfig"; path = "Target Support Files/Pods-Ring-project/Pods-Ring-project.release.xcconfig"; sourceTree = "<group>"; };
+		FBCDDDBD79742269FB2B4893 /* Pods-Ring-project-Ring-projectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ring-project-Ring-projectUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ring-project-Ring-projectUITests/Pods-Ring-project-Ring-projectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FC23910F32555614D5691915 /* Pods-Ring-projectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ring-projectTests.release.xcconfig"; path = "Target Support Files/Pods-Ring-projectTests/Pods-Ring-projectTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +120,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D9A556F2B95730100F4E85F /* PythonKit in Frameworks */,
+				27ACCB638958F5DF027F3B69 /* Pods_Ring_project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B562487800E3FBFB233AD158 /* Pods_Ring_projectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,19 +137,79 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE96A8C99720EF32A990D1C9 /* Pods_Ring_project_Ring_projectUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D946F792BBC562100EFF8DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D946F7B2BBC563F00EFF8DE /* UI */,
+				8D946F7A2BBC562C00EFF8DE /* SetUpUI */,
+				8D946F862BBC56EC00EFF8DE /* HomeView.swift */,
+				8D946F882BBC572700EFF8DE /* ControlView.swift */,
+				8D946F8C2BBC574F00EFF8DE /* MusicPlayer.swift */,
+				8D946F8E2BBC576000EFF8DE /* ServicesNow.swift */,
+				8D946F902BBC576F00EFF8DE /* CharacteristicsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D946F7A2BBC562C00EFF8DE /* SetUpUI */ = {
+			isa = PBXGroup;
+			children = (
+				8D946F7C2BBC566000EFF8DE /* SetUpView.swift */,
+				8D946F7E2BBC567A00EFF8DE /* ScanView.swift */,
+			);
+			path = SetUpUI;
+			sourceTree = "<group>";
+		};
+		8D946F7B2BBC563F00EFF8DE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8D946F802BBC56A000EFF8DE /* SelectButton.swift */,
+				8D946F822BBC56B600EFF8DE /* RoutePickerView.swift */,
+				8D946F842BBC56CA00EFF8DE /* OutlinedButtonStyle.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8D946F922BBC57B900EFF8DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D946FA12BBC5A5200EFF8DE /* CoreML */,
+				8D946F932BBC57C200EFF8DE /* HomeStore.swift */,
+				8D946F952BBC57D000EFF8DE /* BluetoothManager.swift */,
+				8D946F972BBC57DA00EFF8DE /* MLHandler.swift */,
+				8D946F992BBC57EB00EFF8DE /* MusicModel.swift */,
+				8D946F9B2BBC57F500EFF8DE /* RouterPicker.swift */,
+				8D946F9F2BBC581B00EFF8DE /* EmbeddingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8D946FA12BBC5A5200EFF8DE /* CoreML */ = {
+			isa = PBXGroup;
+			children = (
+				8D946FA22BBC5A6800EFF8DE /* best_75.mlpackage */,
+			);
+			path = CoreML;
+			sourceTree = "<group>";
+		};
 		8DD2A60C2B7E04AE008772F4 = {
 			isa = PBXGroup;
 			children = (
+				8DBFB75B2BB095EA0024645F /* ring_dinov2_nearestinterp_nocrop.ort */,
+				8DBFB7572BABBADC0024645F /* Data */,
 				8DD2A6172B7E04AE008772F4 /* Ring-project */,
 				8DD2A6292B7E04B1008772F4 /* Ring-projectTests */,
 				8DD2A6332B7E04B1008772F4 /* Ring-projectUITests */,
 				8DD2A6162B7E04AE008772F4 /* Products */,
+				C1004FC6B2DA79F5A3FFE4B7 /* Pods */,
+				DA19550F679D4F127261EF8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,8 +226,12 @@
 		8DD2A6172B7E04AE008772F4 /* Ring-project */ = {
 			isa = PBXGroup;
 			children = (
+				8D946FB02BBC609500EFF8DE /* Info.plist */,
+				8D946F922BBC57B900EFF8DE /* Model */,
+				8D946F792BBC562100EFF8DE /* View */,
 				8DD2A6182B7E04AE008772F4 /* Ring_projectApp.swift */,
 				8DD2A61A2B7E04AE008772F4 /* ContentView.swift */,
+				8DD2A6452B7E8892008772F4 /* ORTDinoModel.swift */,
 				8DD2A61C2B7E04B0008772F4 /* Assets.xcassets */,
 				8DD2A61E2B7E04B0008772F4 /* Ring_project.entitlements */,
 				8DD2A61F2B7E04B0008772F4 /* Preview Content */,
@@ -129,6 +264,29 @@
 			path = "Ring-projectUITests";
 			sourceTree = "<group>";
 		};
+		C1004FC6B2DA79F5A3FFE4B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				741D73CC52AF54A76231EE55 /* Pods-Ring-project.debug.xcconfig */,
+				B849E7AAF5B3CBAC6C030D57 /* Pods-Ring-project.release.xcconfig */,
+				FBCDDDBD79742269FB2B4893 /* Pods-Ring-project-Ring-projectUITests.debug.xcconfig */,
+				889BDD95DBDCE165630DC333 /* Pods-Ring-project-Ring-projectUITests.release.xcconfig */,
+				5EECEEB502FB67126882493A /* Pods-Ring-projectTests.debug.xcconfig */,
+				FC23910F32555614D5691915 /* Pods-Ring-projectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA19550F679D4F127261EF8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F73CF066AE6B638E3007065 /* Pods_Ring_project.framework */,
+				2F339117C6773F36CED2ABF0 /* Pods_Ring_project_Ring_projectUITests.framework */,
+				8FA684238F668122DE2F7CFF /* Pods_Ring_projectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,15 +294,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DD2A63A2B7E04B1008772F4 /* Build configuration list for PBXNativeTarget "Ring-project" */;
 			buildPhases = (
+				D3EF2A609959C21EF518B6E8 /* [CP] Check Pods Manifest.lock */,
 				8DD2A6112B7E04AE008772F4 /* Sources */,
 				8DD2A6122B7E04AE008772F4 /* Frameworks */,
 				8DD2A6132B7E04AE008772F4 /* Resources */,
 			);
 			buildRules = (
+				8D1B61BE2B86994D00CE7737 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
 			name = "Ring-project";
+			packageProductDependencies = (
+				8D9A556E2B95730100F4E85F /* PythonKit */,
+			);
 			productName = "Ring-project";
 			productReference = 8DD2A6152B7E04AE008772F4 /* Ring-project.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +316,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DD2A63D2B7E04B1008772F4 /* Build configuration list for PBXNativeTarget "Ring-projectTests" */;
 			buildPhases = (
+				A297FB49CCFBA814835266C3 /* [CP] Check Pods Manifest.lock */,
 				8DD2A6222B7E04B1008772F4 /* Sources */,
 				8DD2A6232B7E04B1008772F4 /* Frameworks */,
 				8DD2A6242B7E04B1008772F4 /* Resources */,
@@ -171,6 +335,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DD2A6402B7E04B1008772F4 /* Build configuration list for PBXNativeTarget "Ring-projectUITests" */;
 			buildPhases = (
+				889205038E9F91D80B51AAF7 /* [CP] Check Pods Manifest.lock */,
 				8DD2A62C2B7E04B1008772F4 /* Sources */,
 				8DD2A62D2B7E04B1008772F4 /* Frameworks */,
 				8DD2A62E2B7E04B1008772F4 /* Resources */,
@@ -197,6 +362,7 @@
 				TargetAttributes = {
 					8DD2A6142B7E04AE008772F4 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 					8DD2A6252B7E04B1008772F4 = {
 						CreatedOnToolsVersion = 15.2;
@@ -217,6 +383,9 @@
 				Base,
 			);
 			mainGroup = 8DD2A60C2B7E04AE008772F4;
+			packageReferences = (
+				8D9A556D2B95730100F4E85F /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
 			productRefGroup = 8DD2A6162B7E04AE008772F4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +402,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DBFB75C2BB095EA0024645F /* ring_dinov2_nearestinterp_nocrop.ort in Resources */,
+				8DBFB75D2BB3CCBD0024645F /* Data in Resources */,
 				8DD2A6212B7E04B0008772F4 /* Preview Assets.xcassets in Resources */,
 				8DD2A61D2B7E04B0008772F4 /* Assets.xcassets in Resources */,
 			);
@@ -254,12 +425,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		889205038E9F91D80B51AAF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ring-project-Ring-projectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A297FB49CCFBA814835266C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ring-projectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3EF2A609959C21EF518B6E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ring-project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8DD2A6112B7E04AE008772F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D946F9C2BBC57F500EFF8DE /* RouterPicker.swift in Sources */,
+				8D946F8F2BBC576000EFF8DE /* ServicesNow.swift in Sources */,
+				8D946FA02BBC581B00EFF8DE /* EmbeddingModel.swift in Sources */,
+				8D946F982BBC57DA00EFF8DE /* MLHandler.swift in Sources */,
+				8D946F8D2BBC574F00EFF8DE /* MusicPlayer.swift in Sources */,
+				8D946FA32BBC5A6800EFF8DE /* best_75.mlpackage in Sources */,
+				8D946F872BBC56EC00EFF8DE /* HomeView.swift in Sources */,
+				8DD2A6462B7E8892008772F4 /* ORTDinoModel.swift in Sources */,
+				8D946F962BBC57D000EFF8DE /* BluetoothManager.swift in Sources */,
 				8DD2A61B2B7E04AE008772F4 /* ContentView.swift in Sources */,
+				8D946F832BBC56B600EFF8DE /* RoutePickerView.swift in Sources */,
+				8D946F892BBC572700EFF8DE /* ControlView.swift in Sources */,
+				8D946F7F2BBC567B00EFF8DE /* ScanView.swift in Sources */,
+				8D946F9A2BBC57EB00EFF8DE /* MusicModel.swift in Sources */,
+				8D946F812BBC56A000EFF8DE /* SelectButton.swift in Sources */,
+				8D946F912BBC576F00EFF8DE /* CharacteristicsView.swift in Sources */,
+				8D946F942BBC57C200EFF8DE /* HomeStore.swift in Sources */,
+				8D946F852BBC56CA00EFF8DE /* OutlinedButtonStyle.swift in Sources */,
+				8D946F7D2BBC566000EFF8DE /* SetUpView.swift in Sources */,
 				8DD2A6192B7E04AE008772F4 /* Ring_projectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,21 +671,29 @@
 		};
 		8DD2A63B2B7E04B1008772F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 741D73CC52AF54A76231EE55 /* Pods-Ring-project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Ring-project/Ring_project.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ring-project/Preview Content\"";
 				DEVELOPMENT_TEAM = 9BN669479Y;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ring-project/Info.plist";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "requires music usage";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "App requires bluetooth";
+				INFOPLIST_KEY_NSHomeKitUsageDescription = "App will require HomeKit integration for controlling devices";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Requires photos";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
@@ -444,6 +710,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,21 +718,29 @@
 		};
 		8DD2A63C2B7E04B1008772F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B849E7AAF5B3CBAC6C030D57 /* Pods-Ring-project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Ring-project/Ring_project.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ring-project/Preview Content\"";
 				DEVELOPMENT_TEAM = 9BN669479Y;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ring-project/Info.plist";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "requires music usage";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "App requires bluetooth";
+				INFOPLIST_KEY_NSHomeKitUsageDescription = "App will require HomeKit integration for controlling devices";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Requires photos";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
@@ -489,6 +764,7 @@
 		};
 		8DD2A63E2B7E04B1008772F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EECEEB502FB67126882493A /* Pods-Ring-projectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +788,7 @@
 		};
 		8DD2A63F2B7E04B1008772F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC23910F32555614D5691915 /* Pods-Ring-projectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -535,6 +812,7 @@
 		};
 		8DD2A6412B7E04B1008772F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBCDDDBD79742269FB2B4893 /* Pods-Ring-project-Ring-projectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -557,6 +835,7 @@
 		};
 		8DD2A6422B7E04B1008772F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 889BDD95DBDCE165630DC333 /* Pods-Ring-project-Ring-projectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -617,6 +896,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8D9A556D2B95730100F4E85F /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8D9A556E2B95730100F4E85F /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D9A556D2B95730100F4E85F /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8DD2A60D2B7E04AE008772F4 /* Project object */;
 }
