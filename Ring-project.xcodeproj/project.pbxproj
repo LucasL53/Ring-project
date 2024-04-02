@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		122BA088A9D62FF84D5C46BA /* Pods_Ring_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FA7C7D35E174C984965302 /* Pods_Ring_project.framework */; };
+		36A78F2C2AE18FE01F021C2E /* Pods_Ring_projectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421087DC7016EDC13C672D80 /* Pods_Ring_projectTests.framework */; };
 		8D946F7D2BBC566000EFF8DE /* SetUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D946F7C2BBC566000EFF8DE /* SetUpView.swift */; };
 		8D946F7F2BBC567B00EFF8DE /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D946F7E2BBC567A00EFF8DE /* ScanView.swift */; };
 		8D946F812BBC56A000EFF8DE /* SelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D946F802BBC56A000EFF8DE /* SelectButton.swift */; };
@@ -35,6 +37,7 @@
 		8DD2A6352B7E04B1008772F4 /* Ring_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2A6342B7E04B1008772F4 /* Ring_projectUITests.swift */; };
 		8DD2A6372B7E04B1008772F4 /* Ring_projectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2A6362B7E04B1008772F4 /* Ring_projectUITestsLaunchTests.swift */; };
 		8DD2A6462B7E8892008772F4 /* ORTDinoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2A6452B7E8892008772F4 /* ORTDinoModel.swift */; };
+		9E654F6039C24327DBBC0C7D /* Pods_Ring_project_Ring_projectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647A352766807DEF39124390 /* Pods_Ring_project_Ring_projectUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -69,6 +72,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		197BDD1B45FF3941883A2A5E /* Pods-Ring-project-Ring-projectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ring-project-Ring-projectUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ring-project-Ring-projectUITests/Pods-Ring-project-Ring-projectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D6EB31E195F1F8BDC4DCEB5 /* Pods-Ring-project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ring-project.release.xcconfig"; path = "Target Support Files/Pods-Ring-project/Pods-Ring-project.release.xcconfig"; sourceTree = "<group>"; };
+		421087DC7016EDC13C672D80 /* Pods_Ring_projectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ring_projectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47A00EC65F7B591135D04643 /* Pods-Ring-projectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ring-projectTests.debug.xcconfig"; path = "Target Support Files/Pods-Ring-projectTests/Pods-Ring-projectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		56FFA5B72DBF8C3F1A5A919A /* Pods-Ring-projectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ring-projectTests.release.xcconfig"; path = "Target Support Files/Pods-Ring-projectTests/Pods-Ring-projectTests.release.xcconfig"; sourceTree = "<group>"; };
+		647A352766807DEF39124390 /* Pods_Ring_project_Ring_projectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ring_project_Ring_projectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7169C9D8A256D5FADC8DC776 /* Pods-Ring-project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ring-project.debug.xcconfig"; path = "Target Support Files/Pods-Ring-project/Pods-Ring-project.debug.xcconfig"; sourceTree = "<group>"; };
 		8D946F7C2BBC566000EFF8DE /* SetUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SetUpView.swift; path = "Ring-project/View/SetUpUI/SetUpView.swift"; sourceTree = SOURCE_ROOT; };
 		8D946F7E2BBC567A00EFF8DE /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		8D946F802BBC56A000EFF8DE /* SelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectButton.swift; sourceTree = "<group>"; };
@@ -101,6 +111,8 @@
 		8DD2A6342B7E04B1008772F4 /* Ring_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ring_projectUITests.swift; sourceTree = "<group>"; };
 		8DD2A6362B7E04B1008772F4 /* Ring_projectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ring_projectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8DD2A6452B7E8892008772F4 /* ORTDinoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ORTDinoModel.swift; sourceTree = "<group>"; };
+		90FA7C7D35E174C984965302 /* Pods_Ring_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ring_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFDB5CDE19C103A9BBD57515 /* Pods-Ring-project-Ring-projectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ring-project-Ring-projectUITests.release.xcconfig"; path = "Target Support Files/Pods-Ring-project-Ring-projectUITests/Pods-Ring-project-Ring-projectUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +121,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D9A556F2B95730100F4E85F /* PythonKit in Frameworks */,
+				122BA088A9D62FF84D5C46BA /* Pods_Ring_project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A78F2C2AE18FE01F021C2E /* Pods_Ring_projectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,12 +137,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E654F6039C24327DBBC0C7D /* Pods_Ring_project_Ring_projectUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82E3E7E16EB705B30A50038B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90FA7C7D35E174C984965302 /* Pods_Ring_project.framework */,
+				647A352766807DEF39124390 /* Pods_Ring_project_Ring_projectUITests.framework */,
+				421087DC7016EDC13C672D80 /* Pods_Ring_projectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8D946F792BBC562100EFF8DE /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +219,7 @@
 				8DD2A6332B7E04B1008772F4 /* Ring-projectUITests */,
 				8DD2A6162B7E04AE008772F4 /* Products */,
 				C1004FC6B2DA79F5A3FFE4B7 /* Pods */,
+				82E3E7E16EB705B30A50038B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -251,6 +277,12 @@
 		C1004FC6B2DA79F5A3FFE4B7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				7169C9D8A256D5FADC8DC776 /* Pods-Ring-project.debug.xcconfig */,
+				2D6EB31E195F1F8BDC4DCEB5 /* Pods-Ring-project.release.xcconfig */,
+				197BDD1B45FF3941883A2A5E /* Pods-Ring-project-Ring-projectUITests.debug.xcconfig */,
+				AFDB5CDE19C103A9BBD57515 /* Pods-Ring-project-Ring-projectUITests.release.xcconfig */,
+				47A00EC65F7B591135D04643 /* Pods-Ring-projectTests.debug.xcconfig */,
+				56FFA5B72DBF8C3F1A5A919A /* Pods-Ring-projectTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -262,6 +294,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DD2A63A2B7E04B1008772F4 /* Build configuration list for PBXNativeTarget "Ring-project" */;
 			buildPhases = (
+				ACE99708F33C4F6B45AE4D53 /* [CP] Check Pods Manifest.lock */,
 				8DD2A6112B7E04AE008772F4 /* Sources */,
 				8DD2A6122B7E04AE008772F4 /* Frameworks */,
 				8DD2A6132B7E04AE008772F4 /* Resources */,
@@ -283,6 +316,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DD2A63D2B7E04B1008772F4 /* Build configuration list for PBXNativeTarget "Ring-projectTests" */;
 			buildPhases = (
+				AC26D3AE6968E029561576F5 /* [CP] Check Pods Manifest.lock */,
 				8DD2A6222B7E04B1008772F4 /* Sources */,
 				8DD2A6232B7E04B1008772F4 /* Frameworks */,
 				8DD2A6242B7E04B1008772F4 /* Resources */,
@@ -301,6 +335,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DD2A6402B7E04B1008772F4 /* Build configuration list for PBXNativeTarget "Ring-projectUITests" */;
 			buildPhases = (
+				97D9EF70A6475A9B5973EFCD /* [CP] Check Pods Manifest.lock */,
 				8DD2A62C2B7E04B1008772F4 /* Sources */,
 				8DD2A62D2B7E04B1008772F4 /* Frameworks */,
 				8DD2A62E2B7E04B1008772F4 /* Resources */,
@@ -389,6 +424,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		97D9EF70A6475A9B5973EFCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ring-project-Ring-projectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC26D3AE6968E029561576F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ring-projectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACE99708F33C4F6B45AE4D53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ring-project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8DD2A6112B7E04AE008772F4 /* Sources */ = {
@@ -567,6 +671,7 @@
 		};
 		8DD2A63B2B7E04B1008772F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7169C9D8A256D5FADC8DC776 /* Pods-Ring-project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -575,7 +680,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ring-project/Preview Content\"";
-				DEVELOPMENT_TEAM = 7BYH4HTJ4D;
+				DEVELOPMENT_TEAM = 9BN669479Y;
 				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -601,7 +706,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MobIntel.Lucas.Ring-project";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MobIntel.Lucas.Ring-project-eyoel2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -616,6 +721,7 @@
 		};
 		8DD2A63C2B7E04B1008772F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D6EB31E195F1F8BDC4DCEB5 /* Pods-Ring-project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -624,7 +730,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ring-project/Preview Content\"";
-				DEVELOPMENT_TEAM = 7BYH4HTJ4D;
+				DEVELOPMENT_TEAM = 9BN669479Y;
 				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -650,7 +756,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MobIntel.Lucas.Ring-project";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MobIntel.Lucas.Ring-project-eyoel2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -664,6 +770,7 @@
 		};
 		8DD2A63E2B7E04B1008772F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47A00EC65F7B591135D04643 /* Pods-Ring-projectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -687,6 +794,7 @@
 		};
 		8DD2A63F2B7E04B1008772F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56FFA5B72DBF8C3F1A5A919A /* Pods-Ring-projectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -710,6 +818,7 @@
 		};
 		8DD2A6412B7E04B1008772F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 197BDD1B45FF3941883A2A5E /* Pods-Ring-project-Ring-projectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -732,6 +841,7 @@
 		};
 		8DD2A6422B7E04B1008772F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFDB5CDE19C103A9BBD57515 /* Pods-Ring-project-Ring-projectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

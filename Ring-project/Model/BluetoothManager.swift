@@ -814,7 +814,10 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
                                 
                                 if scanDinoFlag {
                                     if let pngData = uiImage.pngData(), let currAccessory = scanDinoAccessory {
-                                        let dinoEmbedding = [0.0] // TODO: Eyoel Dino Code here
+                                        guard let dinoEmbedding = mlModel.DinoEmbedding(img_buf: cameraBuffer) else {
+                                            print("Error: Couldn't get embedings for image")
+                                            return
+                                        }
                                         let photoAndEmbedding = PhotoAndEmbedding(photo: pngData, embedding: dinoEmbedding)
                                         currAccessory.photoAndEmbeddings.append(photoAndEmbedding)
                                     }
@@ -872,19 +875,26 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
                                         // classifiedDevice {'blinds', 'door', 'door handle', 'laptop', 'lights', 'smart lock', 'speaker', 'tv', 'window'}
                                         // eyoelFunc(classifiedDevice: String = classifiedDevice,
                                         //           buffer: [Double] = cameraBuffer, reference: HomeEmbeddings = homeStorage)
-                                    }
-                                    
-                                    guard let emb = mlModel.DinoEmbedding(img_buf: cameraBuffer) else {
-                                        print("Error: Could not get an embedding for image")
-                                        return
-                                    }
-                                    let database: [String: [String: [[[Float]]]]] = [:]
-                                    let pred = mlModel.get_prediction(img_emb: emb, database: database)
-                                    
-                                    if (scanStatus) {
-                                        // save emb to predicted UUID group of embeddings
-                                    } else {
-                                        // output a predicted UUID
+                                        
+                                        
+                                        // TODO: Constrain query space based on Yolo classification.
+                                        var database: [String:  [[[[Float]]]]] = [:]
+                                        for acc in homeStorage.accessoryembeddings {
+                                            database[acc.accessoryName] = []
+                                            for phoandemb in acc.photoAndEmbeddings {
+                                                if var arr = database[acc.accessoryName] {
+                                                    arr.append(phoandemb.embedding)
+                                                }
+                                            }
+                                        }
+                                        
+                                        guard let img_emb = mlModel.DinoEmbedding(img_buf: cameraBuffer) else {
+                                            print("There was an error getting Dino embedding for this image.")
+                                            return
+                                        }
+                                        
+                                        // This is the prediction TODO: Lucas I hand this off to you.
+                                        let prediction = mlModel.get_DINO_prediction(img_emb: img_emb, database: database)
                                     }
                                 }
                             }

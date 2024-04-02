@@ -9,9 +9,9 @@ class PhotoAndEmbedding {
     var accessory: AccessoryEmbedding?
     
     @Attribute(.externalStorage) var photo: Data?
-    var embedding: [Double] // Replace Double with the correct type for your embedding
+    var embedding: [[[Float]]]
 
-    init(photo: Data, embedding: [Double]) {
+    init(photo: Data, embedding: [[[Float]]]) {
         self.photo = photo
         self.embedding = embedding
     }

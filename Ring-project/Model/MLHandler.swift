@@ -53,14 +53,12 @@ class MLHandler {
     // MARK: - Dinov2
     
     // TODO: Replace string with uuid
-    func get_prediction(img_emb: [[[Float]]], database: [String: [String: [[[Float]]]]]) -> String {
+    func get_DINO_prediction(img_emb: [[[Float]]], database: [String: [ [[[Float]]] ]]) -> String {
         let sims = computeSim(q: img_emb, database: database)
-        var scores: [(Float, String, String)] = []
-        for (obj, files) in sims {
-            for (file, simData) in files {
-                if let objsim = simData["obj"] {
-                    scores.append((objsim, obj, file))
-                }
+        var scores: [(Float, String)] = []
+        for (obj, preds) in sims {
+            for score in preds {
+                scores.append((score, obj))
             }
         }
         
@@ -86,20 +84,20 @@ class MLHandler {
          }
          patch_len: side length of the square patch
      */
-    func computeSim(q: [[[Float]]], database: [String: [String: [[[Float]]]]], patch_len: Int = 4) -> [String : [String : [String : Float]]] {
+    func computeSim(q: [[[Float]]], database: [String: [[[[Float]]]]], patch_len: Int = 4) -> [String : [Float]] {
         // TODO: check whether rounding is OK.
         let start = 8 - (patch_len / 2)
         let end = 8 + Int(ceil(Float(patch_len) / 2.0))
-        var sims: [String: [String: [String: Float]]] = [:]
+        var sims: [String: [Float]] = [:]
         for (obj, vecs) in database {
-            sims[obj] = [:]
-            for (img, emb) in vecs {
+            sims[obj] = []
+            for emb in vecs {
                 // Object similarity using center patchLen x patchLen patch embeddings
                 let _q = embMean(emb: q, s: start, e: end)
                 let _emb = embMean(emb: emb, s: start, e: end)
                 let objSim = cosineSimilarity(a: _q, b: _emb)
 
-                sims[obj]![img] = ["obj": objSim]
+                sims[obj]?.append(objSim)
             }
         }
         
